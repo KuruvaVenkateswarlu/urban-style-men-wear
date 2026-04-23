@@ -35,7 +35,7 @@ export default function Footer() {
           <p>Phone/WhatsApp: +91 9014689625</p>
           <p>Email: support@urbanstyle.com</p>
           <div className={styles.socials}>
-            <a href="#">Instagram</a>
+            <a href="https://www.instagram.com/rban_style/" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
           </div>
