@@ -30,7 +30,17 @@ const blogPosts = [
     excerpt: "Make your big day memorable with the right traditional attire.",
     image: "/images/wedding_wear_product_1776879797382.png",
     date: "April 05, 2026",
-    readTime: "6 min read"
+    readTime: "6 min read",
+    slug: "#"
+  },
+  {
+    id: 4,
+    title: "Top 7 Men’s Fashion Trends in India for 2026",
+    excerpt: "Fashion is evolving rapidly in India, and modern men are choosing styles that combine comfort, confidence, and class.",
+    image: "/images/blog/hero_fashion_2026.png",
+    date: "April 24, 2026",
+    readTime: "8 min read",
+    slug: "/blog/top-7-mens-fashion-trends-india-2026"
   }
 ];
 
@@ -61,7 +71,7 @@ export default function Blog() {
               </div>
               <h2>{post.title}</h2>
               <p>{post.excerpt}</p>
-              <Link href="#" className={styles.readMore}>
+              <Link href={post.slug || "#"} className={styles.readMore}>
                 Read Article &rarr;
               </Link>
             </div>
